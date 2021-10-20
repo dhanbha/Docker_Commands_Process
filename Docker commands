@@ -7,3 +7,34 @@ docker ps
 docker ps -a
 docker images
 
+docker search <image-name>
+docker pull <jenkins>
+docker run -it --name <container-name> <image-name, e.g ubuntu> /bin/bash
+#on above command i = intrecative mode & t = terminal
+
+#To Start the container
+docker start <container-name>
+
+#To login to the container
+docker attach <container-name>
+
+#To see all container
+docker ps -a
+
+#to see running container
+docker ps
+
+#To stop the container
+docker stop
+
+#To delete the container
+docker rm <container-name>
+
+#to check the config chnage on docker
+docker diff <container-name> <image-name>
+
+#To create the image of the container(If I insatelled the supportive softaware like, pythong, node , Jenkins and want to create the image of it)
+docker commit <container-name> <new-image-name>
+
+#How to create the new container from the above new image
+docker run -it --name <container-name> <updated-iamge-name> /bin/bash
