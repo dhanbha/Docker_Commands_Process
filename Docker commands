@@ -1,0 +1,9 @@
+yum install docker -y
+which docker
+service docker status
+service docker start
+docker info
+docker ps 
+docker ps -a
+docker images
+
